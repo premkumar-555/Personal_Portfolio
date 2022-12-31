@@ -14,7 +14,9 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
-
+body {
+  font-family: "Poppins", sans-serif;
+}
 header {
   background-color: var(--dark);
   height: 800px;
@@ -25,6 +27,20 @@ header .container nav a {
   text-decoration: none;
 }
 
+header nav {
+  padding: 1rem 0;
+}
+header nav .left .logo {
+  margin-right: 2rem;
+}
+header nav .left a {
+  margin-right: 1rem;
+  text-transform: uppercase;
+}
+header nav .left a:hover {
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
 .container {
   max-width: 1132px;
   padding: 0 15px;
