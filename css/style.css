@@ -16,6 +16,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
 }
 header {
   background-color: var(--dark);
@@ -45,9 +46,51 @@ header nav .left a:hover {
   max-width: 1132px;
   padding: 0 15px;
   margin: 0 auto;
-  border: 1px solid var(--pure);
+  /* border: 1px solid var(--pure); */
 }
-
 .right button {
   background-color: var(--pure);
+}
+.hero {
+  padding: 2rem 0;
+}
+
+.hero .left img {
+  width: 375px;
+  border: 1px solid #4b00ff;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+  border-radius: 50%;
+}
+.hero .left img:hover {
+  background-color: blue;
+  color: #fff;
+  box-shadow: 0 0 5px #4b00ff, 0 0 20px rgb(75 0 255 / 0.8),
+    0 0 35px rgb(75 0 255 / 0.7), 0 0 50px rgb(75 0 255 / 0.6);
+  border-color: #fff;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.hero .right {
+  color: var(--pure);
+}
+
+.hero .right h6 {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.hero .right h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  font-weight: 100;
+}
+.hero .right h1 span {
+  color: var(--primary);
+}
+.hero .right p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
 }
