@@ -16,11 +16,11 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
 }
 header {
   background-color: var(--dark);
-  height: 800px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+  height: 700px;
 }
 
 header .container nav a {
@@ -46,6 +46,7 @@ header nav .left a:hover {
   max-width: 1132px;
   padding: 0 15px;
   margin: 0 auto;
+  /* margin-bottom: 100px; */
   /* border: 1px solid var(--pure); */
 }
 .right button {
@@ -93,4 +94,50 @@ header nav .left a:hover {
 .hero .right p {
   line-height: 1.9;
   margin-bottom: 2rem;
+}
+section {
+  padding: 3rem 0;
+}
+section.about .about-me-img {
+  height: 450px;
+}
+section.about h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+section.about h1 span {
+  color: var(--primary);
+}
+section.about h3 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+section.about p {
+  font-family: "Lato", sans-serif;
+  color: var(--ternary);
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+section.about .social {
+  display: flex;
+}
+section.about .social a {
+  background: whitesmoke;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.6rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+section.about .social a:hover {
+  background: var(--primary);
+}
+section.about .social a img {
+  width: 100%;
+  height: 100%;
 }
