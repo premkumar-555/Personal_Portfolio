@@ -201,3 +201,8 @@ section.services .card-wrapper p {
   line-height: 1.6;
   font-family: "Lato" sans-serif;
 }
+section.freelancer {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/camera.png);
+}
