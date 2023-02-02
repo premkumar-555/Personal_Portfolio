@@ -152,8 +152,52 @@ section.about .social a img {
   color: var(--ternary);
   text-align: center;
   font-style: "Lato", sans-serif;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 .section-heading span {
   color: var(--primary);
+}
+section.services {
+  background: var(--light);
+}
+section.services .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  grid-row-gap: 3.5rem;
+}
+section.services .card-wrapper .card {
+  background: var(--pure);
+  padding: 3rem 2rem;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+section.services .card-wrapper .card:hover {
+  background: var(--dark);
+}
+section.services .card-wrapper .card:hover h2,
+section.services .card-wrapper .card:hover p {
+  color: var(--pure);
+}
+section.services .card-wrapper .card:hover img {
+  background: var(--pure);
+}
+section.services .card-wrapper .card img {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+  padding: 5px;
+}
+section.services .card-wrapper h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+section.services .card-wrapper p {
+  color: var(--ternary);
+  line-height: 1.6;
+  font-family: "Lato" sans-serif;
 }
