@@ -435,3 +435,8 @@ footer .footer-socials a:nth-child(1) img {
 footer .copyright {
   color: var(--ternary);
 }
+@media (max-width: 1024px) {
+  header #main-nav {
+    display: none;
+  }
+}
