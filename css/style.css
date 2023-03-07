@@ -8,6 +8,9 @@
   --light: #f2f2f2;
   --secondary: #706060;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   padding: 0;
